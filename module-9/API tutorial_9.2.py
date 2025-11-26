@@ -5,7 +5,8 @@ Assignment: Module 9.2
 """
 
 """
-This program 
+This program retrieves data from the Open Notify API and displays a formatted list of
+astronauts currently in space along with their spacecraft.
 """
 
 import requests
@@ -27,3 +28,6 @@ print(f"There are currently {data['number']} astronauts in space:\n")
 
 for person in data["people"]:
     print(f"{person['name']} aboard {person['craft']}")
+
+# SOURCE
+# Custer, C. (2025, November 13). How to use an API in Python. Dataquest. https://www.dataquest.io/blog/api-in-python/
